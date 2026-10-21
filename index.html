@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Hello Cloud</title>
+    <style>
+      :root {
+        color-scheme: dark;
+        --bg: #101218;
+        --card: #1a1f2b;
+        --text: #e8eaef;
+        --muted: #9aa3b5;
+        --accent: #7dd3c0;
+      }
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        margin: 0;
+        min-height: 100vh;
+        display: grid;
+        place-items: center;
+        font-family: ui-sans-serif, system-ui, -apple-system, sans-serif;
+        background: radial-gradient(1200px 600px at 20% 0%, #1c2436, var(--bg));
+        color: var(--text);
+      }
+      main {
+        width: min(40rem, calc(100vw - 2rem));
+        background: var(--card);
+        border: 1px solid #2a3142;
+        border-radius: 1rem;
+        padding: 2rem 1.75rem;
+      }
+      p {
+        margin: 0.75rem 0 0;
+        color: var(--muted);
+        line-height: 1.5;
+      }
+      h1 {
+        margin: 0;
+        font-size: 1.75rem;
+        letter-spacing: -0.03em;
+      }
+      .mark {
+        color: var(--accent);
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <h1>Hello from <span class="mark">LinkRidge Cloud</span></h1>
+      <p>
+        This site is a customer app: a git repo with a Dockerfile at the root.
+        Connect it to a Project, then deploy it. The live URL serves these files.
+      </p>
+    </main>
+  </body>
+</html>
